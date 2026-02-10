@@ -106,8 +106,7 @@ class _LoginWidgetState extends State<LoginWidget>
                           Align(
                             alignment: Alignment(0.0, 0),
                             child: TabBar(
-                              labelColor:
-                                  FlutterFlowTheme.of(context).primaryText,
+                              labelColor: FlutterFlowTheme.of(context).primary,
                               unselectedLabelColor:
                                   FlutterFlowTheme.of(context).secondaryText,
                               labelStyle: FlutterFlowTheme.of(context)
