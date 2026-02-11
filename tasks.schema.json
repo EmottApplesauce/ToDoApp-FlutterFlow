@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/firestore/tasks.schema.json",
+  "title": "Task Document",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Task creation timestamp"
+    },
+    "user": {
+      "type": "string",
+      "pattern": "^/users/[A-Za-z0-9_-]+$",
+      "description": "Firestore document reference to owning user"
+    }
+  },
+  "required": ["title", "completed", "created", "user"],
+  "additionalProperties": false
+}
