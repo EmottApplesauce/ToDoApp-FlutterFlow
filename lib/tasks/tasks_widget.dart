@@ -108,6 +108,7 @@ class _TasksWidgetState extends State<TasksWidget> {
                               .headlineMedium
                               .fontStyle,
                         ),
+                        color: Color(0xFF38DBDB),
                         letterSpacing: 0.0,
                         fontWeight: FlutterFlowTheme.of(context)
                             .headlineMedium
